@@ -56,7 +56,7 @@ public class TestCharacter extends CharacterTestBase {
                 .assertThat().statusCode(200)
                 .and()
                 .assertThat().contentType("application/json; charset=utf-8").extract().response();
-
+        //alternatively
         //assertEquals(true,response.body().asString().contains("Dead"), "Expected  doesn't match with actual");
 
         assertTrue(response.body().asString().contains("Dead"));
